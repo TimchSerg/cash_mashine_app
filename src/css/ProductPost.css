@@ -1,0 +1,9 @@
+.product-post{
+  display: block;
+  margin-left: 50%;
+  
+  padding-left: 15px;
+}
+.product-post h1{
+  text-align: left;
+}

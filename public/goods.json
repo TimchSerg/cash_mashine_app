@@ -1,0 +1,44 @@
+[
+  {
+    "uuId":"1",
+    "name":"Масло крестьянское",
+    "quantity":15,
+    "price":98.5
+  },
+  {
+    "uuId":"2",
+    "name":"Хлеб",
+    "quantity":26,
+    "price":57.01
+  },
+  {
+    "uuId":"5",
+    "name":"Батон",
+    "quantity":206,
+    "price":42.00
+  },
+  {
+    "uuId":"6",
+    "name":"Кетчуп",
+    "quantity":23,
+    "price":88.00
+  },
+  {
+    "uuId":"7",
+    "name":"Майонез",
+    "quantity":12,
+    "price":102.00
+  },
+  {
+    "uuId":"3",
+    "name":"Молоко",
+    "quantity":110,
+    "price":47.5
+  },
+  {
+    "uuId":"4",
+    "name":"Кефир",
+    "quantity":49,
+    "price":52.25
+  }
+]

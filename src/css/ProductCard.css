@@ -1,0 +1,28 @@
+.product {
+
+}
+.product h1{
+  text-align: left;
+}
+.product h1 span{
+  font-weight: normal;
+}
+.product p{
+  font-weight: normal;
+}
+.product p span{
+  font-weight: bold;
+  display: inline-block;
+  width: 40%;
+}
+
+.product .add_to_card{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.add_to_card button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
