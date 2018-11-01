@@ -3,7 +3,7 @@ import React from 'react';
 import '../css/ProductPost.css';
 
 
-const ProductPost = ({ name, quantity, amount, uuId, isDelete, }) => {
+const ProductPost = ({ name, quantity, amount, uuId, isDelete }) => {
 
   return (
       <div className="product-post">
@@ -12,7 +12,7 @@ const ProductPost = ({ name, quantity, amount, uuId, isDelete, }) => {
             <span>Кол-во: { quantity } шт</span>
           </p>
           <p><span>Стоимость: </span>{ amount } р.</p>
-          <button >Удалить</button>
+
       </div>
     );
 }
