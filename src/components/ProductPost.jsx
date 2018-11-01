@@ -3,11 +3,11 @@ import React from 'react';
 import '../css/ProductPost.css';
 
 
-const ProductPost = ({ name, quantity, amount, uuId, isDelete }) => {
+const ProductPost = ({ name, quantity, amount, uuId, isDelete, removeFromCart }) => {
 
   return (
       <div className="product-post">
-          <h1> <span>{ name }</span></h1>
+          <h1> <span>{ name }</span> <span onClick={removeFromCart.bind(this, uuId)}>X</span></h1>
           <p>
             <span>Кол-во: { quantity } шт</span>
           </p>

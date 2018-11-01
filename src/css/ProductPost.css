@@ -1,9 +1,17 @@
 .product-post{
   display: block;
   margin-left: 50%;
-  
+
   padding-left: 15px;
 }
 .product-post h1{
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.product-post h1 span:last-child{
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
 }

@@ -15,8 +15,8 @@ class ProductCard extends Component {
       quantityPrice: 0,
       amount: 0,
       boolBtn: false,
-      bool: false
-
+      bool: false,
+      //ind: 0
     }
   }
 
@@ -34,7 +34,8 @@ class ProductCard extends Component {
           this.setState({
             quantityPrice: 0,
             amount: 0,
-            quantity: this.state.quantity - this.state.quantityPrice
+            quantity: this.state.quantity - this.state.quantityPrice,
+            //ind: this.state.ind + 1
           });
         }
 
@@ -89,7 +90,8 @@ class ProductCard extends Component {
       quantity: this.state.quantityPrice,
       amount: this.state.amount,
       price: this.props.price,
-      isDelete: true
+      isDelete: true,
+      //ind: this.state.ind
     }
 
 

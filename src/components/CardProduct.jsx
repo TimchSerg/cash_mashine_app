@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import ProductPost from './ProductPost';
+import ProductPost from '../containers/ProductPost';
 //import CardPrice from '../containers/CardPrice'
 
 import './CardProduct';
@@ -68,7 +68,7 @@ axios({
       <div className="product_card">
 
 
-            {items.map((item, index) => <ProductPost key = {index} {...item}/>)}
+            {items.map((item, index) => <ProductPost key = {index}  {...item}/>)}
 
             <div className="card-price">
               <hr />
@@ -80,6 +80,7 @@ axios({
                 <span onClick={this.handlePostSell.bind(this)}>
                   <button onClick={removeAllCart.bind(this)}>Оформить заказ</button>
                 </span>
+                  <button onClick={removeAllCart.bind(this)}>Очистить корзину</button>
               </div>
 
               <hr />

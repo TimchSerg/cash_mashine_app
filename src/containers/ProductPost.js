@@ -3,9 +3,11 @@ import { bindActionCreators } from 'redux';
 import * as cartActions from '../actions/cartAction';
 import ProductPost from '../components/ProductPost';
 
+let a= 0;
 
 const mapStateToProps = ({ cart }) => ({
-  items: cart.items
+  items: cart.items,
+  ind: a++,
 });
 
 const mapDispatchToProps = dispatch => ({

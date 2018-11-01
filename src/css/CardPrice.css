@@ -2,3 +2,6 @@
   display: flex;
   justify-content: center;
 }
+.btnSell button:first-child{
+  margin-right: 25px;
+}
