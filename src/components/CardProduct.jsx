@@ -56,12 +56,14 @@ axios({
     	    console.log(error);
     	});
 
-        console.log(arrayPrice);
+        //console.log(arrayPrice);
 
   }
 
+
   render(){
     const { items, totalPrice, count, removeAllCart } = this.props;
+    //console.log(items);
 
 
     return (

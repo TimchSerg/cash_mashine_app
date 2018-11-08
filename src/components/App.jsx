@@ -13,6 +13,13 @@ import '../store';
 
 class App extends Component {
 
+  constructor(props){
+    super();
+    this.state = {
+      cartPrice: []
+    };
+  }
+
   componentDidMount(){
     const { setProducts } = this.props;
     const url = '/goods.json';
@@ -30,11 +37,19 @@ class App extends Component {
           setProducts(data);
       })
       .catch(error => console.log(error));
+
   }
 
   render() {
     const { products } = this.props;
-
+/*
+    const arrayPrice = cartItems.map(item => {
+      return {
+        quantity: item.quantity,
+      };
+    });
+    console.log(arrayPrice);
+*/
     return (
       <div className="container">
         <Menu />

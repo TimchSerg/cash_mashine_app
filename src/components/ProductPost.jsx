@@ -3,7 +3,7 @@ import React from 'react';
 import '../css/ProductPost.css';
 
 
-const ProductPost = ({ name, quantity, amount, uuId, isDelete, removeFromCart }) => {
+const ProductPost = ({ name, quantity, amount, uuId, isDelete, removeFromCart, ind }) => {
 
   return (
       <div className="product-post">

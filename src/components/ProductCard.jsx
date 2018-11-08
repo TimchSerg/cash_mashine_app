@@ -13,29 +13,37 @@ class ProductCard extends Component {
       name: '',
       quantity: '',
       quantityPrice: 0,
+      cartItems: 0,
       amount: 0,
       boolBtn: false,
       bool: false,
-      //ind: 0
     }
   }
 
   componentDidMount(){
+
     this.setState({
       name: this.props.name,
       quantity: this.props.quantity,
       price: this.props.price,
     });
 
-
   }
+
+
+  componentWillReceiveProps(nextProps) {
+      if(nextProps.addedQuantity !== this.props.addedQuantity) {
+          this.setState({
+            quantity: this.props.quantity - nextProps.addedQuantity
+          });
+      }
+    }
+
 
         handleSave(){
           this.setState({
             quantityPrice: 0,
             amount: 0,
-            quantity: this.state.quantity - this.state.quantityPrice,
-            //ind: this.state.ind + 1
           });
         }
 
@@ -88,12 +96,12 @@ class ProductCard extends Component {
       uuId: this.props.uuId,
       name: this.props.name,
       quantity: this.state.quantityPrice,
+      quantityPrice: this.state.quantityPrice,
       amount: this.state.amount,
       price: this.props.price,
       isDelete: true,
-      //ind: this.state.ind
     }
-
+//console.log(this.props.addedCount);
 
     return(
       <div className="product">

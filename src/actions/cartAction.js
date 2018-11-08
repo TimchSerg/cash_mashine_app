@@ -8,7 +8,7 @@ export const removeAllCart = isDelete => ({
   payload: isDelete,
 });
 
-export const removeFromCart = ind => ({
+export const removeFromCart = uuId => ({
   type: 'REMOVE_FROM_CART',
-  payload: ind
+  payload: uuId
 });
